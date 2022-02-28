@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link rel="bulma-stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="contact-form-header">
+            <h1>Prof A's Lab 5</h1>
+        </header>
+     <div class="wrapper">
+        <form action='' method='get' class='contact-form'>
+            <div class='contact-row'>
+                <label for='first-name'>First Name</label>
+                <input id='first-name' name='first-name' type='text'/>
+              </div>
+            <div class="food-row">
+                <label for='food-pref'>Food Preference</label>
+                <input id='food-pref' name='food-pref' type='text'/>
+            </div>
+            <fieldset class='legacy-form-row'>
+                <legend>Veggie or Vegan?</legend>
+                <input id='Yes-option-1'
+                       name='answer'
+                       type='option'
+                       value='Yes' />
+                <label for='Yes-option-1' class='Answer-label'>Yes</label>
+                <input id='No-option-2'
+                       name='answer'
+                       type='option'
+                       value='No'
+                       checked />
+                <label for='No-option-2' class='Answer-label'>No</label>
+              </fieldset>
+              <div class='contact-row'>
+                <button>Submit</button>
+              </div>
+        </form>
+     </div>
+    </div>
+  </body>
+</html>

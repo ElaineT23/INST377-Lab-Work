@@ -10,6 +10,34 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   background-color: darkslategray;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-header {
+  background-color: #f7d953;
+  border-radius: 3px;
+  border: 1px solid #D6D9DC;
+
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.contact-form-header h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  
+  width: 50%;
+  padding: 20px;
+  margin: 0 0 40px 0;
+
 }
 
 /* Page Layout */
@@ -24,4 +52,110 @@ body {
 .container {
   max-width: 960px;
   margin-top: 25px;
+}
+
+
+.contact-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.contact-row label {
+  margin-bottom: 15px;
+}
+
+
+.food-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.food-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.food-row label {
+  margin-bottom: 15px;
+}
+
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .Answer-label {
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='option'] {
+  margin-top: 2px;
+}
+  
+.legacy-form-row .Answer-label,
+.legacy-form-row input[type='option'] {
+  float: left;
+}
+
+
+.legacy-form-row {
+  margin-bottom: 10px;
+}
+.legacy-form-row legend {
+  width: 120px;
+  text-align: center;
+  padding: 0px;
+}
+.legacy-form-row legend {
+  float: left;
+
+}
+
+/* Button ***/
+
+.contact-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #0ce04c;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.contact-row button:hover {
+  background-color: #00ff22;
+}
+
+.contact-row button:active {
+  background-color: #01ff38;
 }
