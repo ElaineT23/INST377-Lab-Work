@@ -8,39 +8,49 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
-        <header class="contact-form-header">
-            <h1>Prof A's Lab 5</h1>
-        </header>
-     <div class="wrapper">
-        <form action='' method='get' class='contact-form'>
-            <div class='contact-row'>
-                <label for='first-name'>First Name</label>
-                <input id='first-name' name='first-name' type='text'/>
+    <div class="wrapper">
+      <div class="container">
+        <div class="contact-form-header">Elaine Tse Lab 5</div>
+        <div class="columns">
+          <div class="page_info">
+            <form class="main_form"></form>
+              <div class="form_info">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname">
               </div>
-            <div class="food-row">
-                <label for='food-pref'>Food Preference</label>
-                <input id='food-pref' name='food-pref' type='text'/>
-            </div>
-            <fieldset class='legacy-form-row'>
-                <legend>Veggie or Vegan?</legend>
-                <input id='Yes-option-1'
-                       name='answer'
-                       type='option'
-                       value='Yes' />
-                <label for='Yes-option-1' class='Answer-label'>Yes</label>
-                <input id='No-option-2'
-                       name='answer'
-                       type='option'
-                       value='No'
-                       checked />
-                <label for='No-option-2' class='Answer-label'>No</label>
+
+              <div class="form_info">
+                <label for="pref">Food Preference</label>
+                <input type="text" name="pref" id="pref">
+              </div>
+
+              <fieldset class="radiobuttons">
+                <legend>Veggie Or Vegan?</legend>
+
+                <input id="button_type_1"
+                  name="button_type"
+                  type="radio"
+                  value="Yes"/>
+                <label for="button_type_1" class='radio-label'>Yes</label>
+
+                <input id="button_type_2"
+                  name="button_type"
+                  type="radio"
+                  value="No"
+                  checked />
+              <label for="button_type_2" class='radio-label'>No</label>
               </fieldset>
-              <div class='contact-row'>
-                <button>Submit</button>
-              </div>
-        </form>
-     </div>
+
+              <button class="button" type="submit">Submit</button>
+            </form>
+          </div>
+          
+          <div class="page_info">
+            This is going to be someything in two weeks.
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  <script src="./script.js"></script>
+</body>
 </html>

@@ -9,136 +9,63 @@ body {
   padding: 0;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
   display: flex;
-  flex-direction: column;
+  background-color: darkslategray;
 }
 
-.contact-form-header {
-  background-color: #f7d953;
-  border-radius: 3px;
-  border: 1px solid #D6D9DC;
-
-  width: 80%;
-  margin: 40px 0;
-  padding: 50px;
-}
-
-.contact-form-header h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.contact-form {
-  background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-  
-  width: 50%;
-  padding: 20px;
-  margin: 0 0 40px 0;
-
-}
-
-/* Page Layout */
 .columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.columns form {
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
   display: flex;
 }
 .container {
-  max-width: 960px;
-  margin-top: 25px;
+  width: 1250px;
+  min-height: 90vh;
+  background-color: darkslategray;
 }
 
+.contact-form-header {
+  display: block;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  background-color: hsl(48, 100%, 67%);
+}
 
-.contact-row {
-  margin-bottom: 40px;
+.page_info {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
+  padding: 15px;
+  border-radius: 4px;
+  background-color:#efefef;
+  height: fit-content;
 }
 
-.contact-row input[type='text'] {
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px;
-  font-size: 14px;
-}
-
-.contact-row label {
-  margin-bottom: 15px;
-}
-
-
-.food-row {
-  margin-bottom: 40px;
+.form_info {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
 }
 
-.food-row input[type='text'] {
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px;
-  font-size: 14px;
-}
-
-.food-row label {
-  margin-bottom: 15px;
-}
-
-
-.legacy-form-row {
+.radiobuttons {
   border: none;
-  margin-bottom: 40px;
-}
-
-.legacy-form-row legend {
-  margin-bottom: 15px;
-}
-
-.legacy-form-row .Answer-label {
-  font-size: 14px;
-  padding: 0 20px 0 10px;
-}
-
-.legacy-form-row input[type='option'] {
-  margin-top: 2px;
-}
+  margin: 8px;
   
-.legacy-form-row .Answer-label,
-.legacy-form-row input[type='option'] {
-  float: left;
 }
 
-
-.legacy-form-row {
-  margin-bottom: 10px;
-}
-.legacy-form-row legend {
-  width: 120px;
-  text-align: center;
-  padding: 0px;
-}
-.legacy-form-row legend {
-  float: left;
-
-}
-
-/* Button ***/
-
-.contact-row button {
+.button {
   font-size: 16px;
   font-weight: bold;
 
@@ -152,10 +79,12 @@ body {
   cursor: pointer;
 }
 
-.contact-row button:hover {
+.button:hover {
   background-color: #00ff22;
 }
 
-.contact-row button:active {
+.button:active {
   background-color: #01ff38;
 }
+
+
