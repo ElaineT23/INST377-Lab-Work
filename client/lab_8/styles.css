@@ -13,7 +13,10 @@
     background-color: darkslategray;
   }
   
-  #map { height: 180px; }
+  #map { 
+    height: 350px;
+   /*width: ; */
+   }
 
   .columns {
     display: flex;
@@ -53,6 +56,11 @@
     background-color:#efefef;
     height: fit-content;
   }
+
+  .page_wide {
+    width: 500px;
+  }
+
 
   ul {
     list-style-type: none; /* Remove bullets */
