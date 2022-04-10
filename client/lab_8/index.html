@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link rel="bulma-stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="contact-form-header">Elaine Tse Lab 5</div>
+        <div class="columns">
+          <div class="page_info">
+            <form class="main_form">
+              <div class="form_info">
+                <label for="resto_name">Restaurant Name</label>
+                <input type="text" name="resto_name" id="resto_name">
+              </div>
+
+              <div class="form_info">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" name="zipcode" id="zipcode">
+              </div>
+
+              <fieldset class="radiobuttons">
+                <legend>Veggie Or Vegan?</legend>
+
+                <input id="button_type_1"
+                  name="button_type"
+                  type="radio"
+                  value="Yes"/>
+                <label for="button_type_1" class='radio-label'>Yes</label>
+
+                <input id="button_type_2"
+                  name="button_type"
+                  type="radio"
+                  value="No"
+                  checked />
+              <label for="button_type_2" class='radio-label'>No</label>
+              </fieldset>
+
+              <button class="button" type="submit">Change Restaurants</button>
+            </form>
+          </div>
+          
+          <div class="page_info">
+            <div id="map"></div>
+            <h1>Restaurants List</h1>
+            <ul class = "resto-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
